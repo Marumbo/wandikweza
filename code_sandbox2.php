@@ -187,7 +187,7 @@ else if ($textExplode[0] != "")
                         break;
 
                     case 3:
-                        if($textExplode[$countOfArray-3] == 1)
+                        if($textExplode[$countOfArray-2] == 1)
                         {
                             //for family planning
 
@@ -200,7 +200,7 @@ else if ($textExplode[0] != "")
 
                         }
 
-                        else if($textExplode[$countOfArray-3] == 2)
+                        else if($textExplode[$countOfArray-2] == 2)
                         {
                             // for maternal and child health
 
@@ -211,7 +211,7 @@ else if ($textExplode[0] != "")
 
                         }
 
-                        else if($textExplode[$countOfArray-3] == 3)
+                        else if($textExplode[$countOfArray-2] == 3)
                         {
                             //for malaria
                             $response = "CON Quantity \n";
@@ -233,7 +233,7 @@ else if ($textExplode[0] != "")
                         Break;
 
                     case 4:
-                        if($textExplode[$countOfArray-5] ==1)
+                        if($textExplode[$countOfArray-3] ==1)
                         {
 
 
@@ -272,7 +272,7 @@ else if ($textExplode[0] != "")
 
                             $delete_menu = mysqli_query($con, "DELETE FROM $menu WHERE `session_id` = '$sessionId'");
                         }
-                        else if($textExplode[$countOfArray-5] ==2)
+                        else if($textExplode[$countOfArray-3] ==2)
                         {
                             //$response = "END Thank you for using the application";
 
@@ -312,7 +312,7 @@ else if ($textExplode[0] != "")
                             $delete_menu = mysqli_query($con, "DELETE FROM $menu WHERE `session_id` = '$sessionId'");
 
                         }
-                        else if($textExplode[$countOfArray-5] == 3)
+                        else if($textExplode[$countOfArray-3] == 3)
                         {
                            // $response = "END Thank you for using the application";
 
